@@ -1,0 +1,26 @@
+$DJSacqua: #6bbaa7;
+$DJSsunshine: #fba100;
+$DJSlavender: #6c648b;
+$DJSrose: #b6a19e;
+
+$DJSbackground_grey: lighten($DJSrose, 26);
+$DJSwhite: white;
+$DJSdark-text: darkslategrey;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  //don't do this, it will break the frontpage
+  //background-color: $DJSwhite;
+  list-style: none;
+
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    color: $DJSsunshine;
+  }
+}
+

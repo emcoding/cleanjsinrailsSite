@@ -1,0 +1,40 @@
+
+/*
+header |flex|
+  - logo
+  - nav
+  - account
+*/
+
+header {
+    display: flex;
+    /*justify-content:space-between; << option 1*/
+    /*option 2*/
+    justify-content: flex-end;
+    align-items: center;
+
+    padding: 0 2vw 1vh 1vw;
+
+    color: $DJSwhite;
+}
+
+.logo {
+/*    option 2*: push the logo to the left
+in combination justify flex-end/
+ */
+    margin-right: auto;
+}
+
+nav {
+    font-size:smaller;
+    /*display:inline-block; i don't needthis right?*/
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 20px;
+}
+
+.account a {
+    color: whitesmoke;
+}

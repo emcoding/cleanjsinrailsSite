@@ -1,0 +1,73 @@
+body {
+  //margin: 1vw 3vw; // side margin just enough for good scroll bar on xs screens
+  margin: 1em 0;
+  color: $DJSdark-text;
+  font-size: large;
+  background-color: $DJSwhite;
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 200;
+}
+
+//copied from https://wweb.dev/resources/css-separator-generator
+.triangle {
+  position: relative;
+  background: $DJSbackground_grey;
+  min-height: calc(50vh + 20px);
+}
+
+.triangle::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 82px 82px 0 82px;
+  border-color: $DJSbackground_grey transparent transparent transparent;
+  left: 50%;
+  transform: translateX(-50%) translateY(100%);
+}
+
+
+.hero-txt {
+  justify-content: center;
+  text-align: center;
+  color: $DJSlavender;
+  line-height: 3rem;
+  font-style: normal;
+  padding: 3em 1vw 0 0; // right 1vw for the scrollbar
+}
+
+.hero-title {
+  font-size: 1.8rem;
+}
+
+.hero-over-title {
+  text-transform: uppercase;
+  font-size: smaller;
+  padding-bottom: 1rem;
+}
+
+.hero-payoff {
+  padding-top: 2rem;
+  letter-spacing: initial;
+  color: lighten($DJSlavender, 10%);
+}
+
+.text-container {
+  margin: 2vw;
+  margin-top: 12vh;
+}
+
+hr.separator-line {
+  border: 2px solid orange;
+  border-radius: 5px;
+  width: 10%;
+  margin:20px auto;
+}
+
+p {
+  font-size: smaller;
+  background-color: $DJSbackground_grey;
+}
+
