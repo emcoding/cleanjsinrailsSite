@@ -8,6 +8,8 @@ body {
   font-weight: 200;
 }
 
+//// HERO things
+
 //color moving background
 body {
   background: linear-gradient(-45deg, $DJSsunshine, $DJSacqua, $DJSlavender, $DJSrose);
@@ -73,11 +75,6 @@ body {
   color: lighten($DJSlavender, 10%);
 }
 
-.text-container {
-  margin: 2vw;
-  margin-top: 12vh;
-}
-
 hr.separator-line {
   border: 2px solid orange;
   border-radius: 5px;
@@ -85,8 +82,61 @@ hr.separator-line {
   margin:20px auto;
 }
 
-p {
-  font-size: smaller;
-  background-color: $DJSbackground_grey;
+//// CONTENT THINGS
+// cards (grid) -> card (flex) -> card Content (See below)
+
+.text-container {
+  margin: 2vw;
+  margin-top: 15vh;
 }
+
+.cards {
+  max-width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  // ^ make it responsive without mediaqueries:
+}
+
+.card {
+  background-color: $DJSbackground_grey;
+  padding: 1rem;
+  height: fit-content;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  // box shadow
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+// CARD content
+// card-header (flex) : img + card-title (course-appetite || course-around)
+// card-text
+
+.card-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.card-title {
+  //padding-left: 15px;
+}
+  .course-appetite {
+    color: $DJSacqua;
+  }
+  .course-around {
+    color: $DJSrose;
+  }
+
+.card-text {
+  font-size: smaller;
+}
+
 
