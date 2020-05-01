@@ -1,19 +1,49 @@
 <!--Text contents for the cards-->
 <% content_for :learn do %>
-  You will learn a LOT!
+  <ul>
+    <li>
+      How to refactor JavaScript into clean code
+    </li>
+    <li>
+      The 10 conventions that speed up reading and writing JavaScript for Rails
+    </li>
+    <li>
+      How to organise JavaScript files (and why Webpacker is good fun)
+    </li>
+    <li>
+      How your Ruby knowledge helps you to mastering ES6
+    </li>
+    <li>
+      How to use tools like sandboxing, dev tools and make it work in Rails
+    </li>
+
+  </ul>
 <% end %>
 <% content_for :harvest do %>
-  It will change a LOT!
+  <ul>
+    <li>DRY, re-usable JavaScript features</li>
+    <li>Change-able, extendable, maintainable JavaScript (that your future self understands)</li>
+    <li>Faster development</li>
+    <li>Easy to reason about JavaScript, less cognitive complexity</li>
+    <li>Well organised files (with Webpacker or the asset pipeline)</li>
+  </ul>
 <% end %>
 <% content_for :bonus do %>
-  ES6, webpacker and more
+  <ul>
+    <li>The 10 Conventions for writing Clean JavaScript Code</li>
+    <li>Cheatsheet ES6 for Ruby/Rails developers</li>
+    <li>Checklist for importing JavaScript libraries in webpacker</li>
+  </ul>
 <% end %>
 <% content_for :amsrb do %>
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aperiam distinctio dolor esse exercitationem,
-  facilis inventore ipsa.
+  Due to the Corona lockdown, we cancelled our plans for a workshop for the Amsterdam Ruby community.
+  Instead, we turned the workshop into a full featured online course. And to be honest: we think
+  it's even better than the workshop :-) Happy accidents.
+
 <% end %>
 <% content_for :pricing do %>
-  Corona pricing: pay if you can, join if you want
+  If you have a job and can afford to pay, we kindly ask you for a contribution of <span style="white-space: nowrap">€ 35.</span>
+  If you can't afford to spent money, please please join us anyway.
 <% end %>
 
 <section class="triangle">
@@ -63,7 +93,7 @@
     <div class="card">
       <div class="card-title course-around">Corona Pricing</div>
       <div class="card-text">
-        <%= yield :amsrb %>
+        <%= yield :pricing %>
       </div>
 
     </div>

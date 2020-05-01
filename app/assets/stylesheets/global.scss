@@ -13,8 +13,6 @@ $DJSdark-text: darkslategrey;
   padding: 0;
   //don't do this, it will break the frontpage
   //background-color: $DJSwhite;
-  list-style: none;
-
 }
 
 a {
@@ -24,3 +22,10 @@ a {
   }
 }
 
+//ul {
+//  list-style: none;
+//}
+////let screenreaders know there is a list, to fix list style none
+//ul li::before {
+//  content: "\200B";
+//}
