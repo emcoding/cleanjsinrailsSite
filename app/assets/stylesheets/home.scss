@@ -3,32 +3,12 @@ body {
   margin: 1em 0;
   color: $DJSdark-text;
   font-size: large;
-  //background-color: $DJSwhite;
+  background-color: $DJSwhite;
   font-family: 'Catamaran', sans-serif;
   font-weight: 200;
 }
 
 //// HERO things
-
-//color moving background
-body {
-  background: linear-gradient(-45deg, $DJSsunshine, $DJSacqua, $DJSlavender, $DJSrose);
-  background-size: 400% 400%;
-  animation: gradient 20s ease infinite;
-}
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-
 //copied from https://wweb.dev/resources/css-separator-generator
 .triangle {
   position: relative;
