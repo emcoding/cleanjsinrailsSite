@@ -1,4 +1,21 @@
-<!--<section class="triangle"></section>-->
+<!--Text contents for the cards-->
+<% content_for :learn do %>
+  You will learn a LOT!
+<% end %>
+<% content_for :harvest do %>
+  It will change a LOT!
+<% end %>
+<% content_for :bonus do %>
+  ES6, webpacker and more
+<% end %>
+<% content_for :amsrb do %>
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aperiam distinctio dolor esse exercitationem,
+  facilis inventore ipsa.
+<% end %>
+<% content_for :pricing do %>
+  Corona pricing: pay if you can, join if you want
+<% end %>
+
 <section class="triangle">
   <div>
     <div class="hero-txt">
@@ -22,40 +39,33 @@
         <div class="card-title course-appetite">What you will learn</div>
       </div>
       <div class="card-text">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aperiam distinctio dolor esse
-        exercitationem, facilis inventore ipsa labore laborum magnam nihil, nisi nobis nostrum officia, porro quae
-        quis veniam voluptas.
+        <%= yield :learn %>
       </div>
     </div>
     <div class="card">
       <div class="card-title course-appetite">What it means for your Rails app</div>
       <div class="card-text">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aperiam distinctio dolor esse
-        exercitationem, facilis inventore ipsa labore laborum magnam nihil, nisi nobis nostrum officia, porro quae
-        quis veniam voluptas.
+        <%= yield :harvest %>
       </div>
     </div>
     <div class="card">
       <div class="card-title course-appetite">Bonus Content</div>
       <div class="card-text">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aperiam distinctio dolor esse
-        exercitationem, facilis inventore ipsa labore laborum magnam nihil, nisi nobis nostrum officia, porro quae
-        quis veniam voluptas.
+        <%= yield :bonus %>
       </div>
     </div>
     <div class="card">
       <div class="card-title course-around">Ams ruby workshop</div>
       <div class="card-text">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aperiam distinctio dolor esse exercitationem,
-        facilis inventore ipsa labore laborum magnam nihil, nisi nobis nostrum officia, porro quae quis veniam voluptas.
-      </div>
+        <%= yield :amsrb %>
+        </div>
     </div>
     <div class="card">
       <div class="card-title course-around">Corona Pricing</div>
       <div class="card-text">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aperiam distinctio dolor esse exercitationem,
-        facilis inventore ipsa labore laborum magnam nihil, nisi nobis nostrum officia, porro quae quis veniam voluptas.
+        <%= yield :amsrb %>
       </div>
+
     </div>
     <div class="card">
       <div style="color: orange">enroll now
