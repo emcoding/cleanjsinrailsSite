@@ -66,13 +66,12 @@ hr.separator-line {
 // cards (grid) -> card (flex) -> card Content (See below)
 
 .text-container {
-  margin: 2vw;
-  margin-top: 15vh;
+  margin-top: 20vh;
 }
 
 .cards {
   max-width: 80%;
-  margin: 0 auto;
+  margin: 2vw auto;
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -82,7 +81,7 @@ hr.separator-line {
 .card {
   background-color: $DJSbackground_grey;
   padding: 1rem;
-  height: fit-content;
+  height: auto;
   border-radius: 2px;
   display: flex;
   flex-direction: column;
