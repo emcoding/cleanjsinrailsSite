@@ -39,7 +39,7 @@
 <% content_for :amsrb do %>
   Due to the Corona lockdown, we cancelled our plans for a workshop for the Amsterdam Ruby community.
   Instead, we turned the workshop into a full featured online course. And to be honest: we think
-  it's even better than the workshop :-) Happy accidents.
+  it's even better than the workshop :-) Collateral gains.
 
 <% end %>
 <% content_for :pricing do %>
@@ -76,6 +76,13 @@
   </ul>
 <% end %>
 
+<% content_for :courseparts do %>
+  This is part 1 of 3.
+  Part 1: JavaScript for interactive UI.
+  Part 2: Exchanging data between Rails and JavaScript
+  Part 3: Components
+<% end %>
+
 <section class="triangle">
   <div>
     <div class="hero-txt">
@@ -99,7 +106,7 @@
 
   <h2 id="course-content">About the Course</h2>
   <div class="cards">
-    <div class="card" id="course-content">
+    <div class="card">
 
       <div class="card-header">
 <!--        <div><%#= image_tag("learn-icon", size: 32, alt: "icon") %></div>-->
@@ -121,12 +128,20 @@
         <%= yield :bonus %>
       </div>
     </div>
-    <div class="card" id="amsrb">
+  </div>
+
+  <h2 id="amsrb">But what about the Ams.rb workshop?</h2>
+  <div class="cards">
+    <div class="card">
       <div class="card-title course-around">Ams ruby workshop</div>
       <div class="card-text">
         <%= yield :amsrb %>
         </div>
     </div>
+  </div>
+
+  <h2 id="enroll now">Enroll now!</h2>
+  <div class="cards">
     <div class="card" id="pricing">
       <div class="card-title course-around">Corona Pricing</div>
       <div class="card-text">
@@ -134,9 +149,13 @@
       </div>
     </div>
     <div class="card">
-      <div style="color: orange">enroll now
-      </div>
+      <div class="accented">enroll now</div>
     </div>
+  </div>
+
+
+  <h2 id="foryou">This is for you...</h2>
+  <div class="cards">
     <div class="card">
       <div>
         <%= yield :foryou %>
@@ -147,6 +166,7 @@
         <%= yield :notforyou %>
       </div>
     </div>
+  </div>
     <div class="card">
       <div>
         <%= yield :courseparts %>
@@ -157,11 +177,14 @@
 
 <section>
   <div id="aboutus">
-    <div class="card-text">
-      Maud about DJ: "I always wondered why DJ loved JavaScript so much. I know he loved Ruby, and I didn't understand how one can love Ruby and JavaScript at the same time.
-      When I showed him a piece of my JavaScript in Rails code, and I started refactoring according to his opinions, I finally started to see
+    <div class="intro">
+      Maud about DJ: "I always wondered why DJ loved JavaScript so much. I know he loved Ruby, and <span class="accented">I didn't understand how one can love Ruby and JavaScript at the same time</span>.
+      When I showed him a piece of my JavaScript in Rails code, and we started refactoring together, I finally started to see
       what JavaScript <em>could</em> be - but almost never is. I admire his ability to play with the differences between the languages. And it's good fun to work with him."
+    </div>
+    <div class="intro">
       DJ about Maud:
+
     </div>
   </div>
 </section>
