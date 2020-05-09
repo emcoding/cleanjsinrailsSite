@@ -29,7 +29,6 @@ body {
   transform: translateX(-50%) translateY(100%);
 }
 
-
 .hero-txt {
   justify-content: center;
   text-align: center;
@@ -40,12 +39,11 @@ body {
 }
 
 .hero-title {
-  font-size: 1.8rem;
+  font-size: 2.5rem;
 }
 
 .hero-over-title {
   text-transform: uppercase;
-  font-size: smaller;
   padding-bottom: 1rem;
 }
 
@@ -63,19 +61,28 @@ hr.separator-line {
 }
 
 //// CONTENT THINGS
+// text-container -> intro + 3 card chapters +  about us
 // cards (grid) -> card (flex) -> card Content (See below)
 
 .text-container {
-  margin-top: 20vh;
+  max-width: 80%;
+  margin: 15vh auto;
+  //margin: auto;
+}
+
+.intro {
+  padding: 0 19vw 15vh 20vw;
+  font-size: larger;
+  //padding-bottom: 15vh;
 }
 
 .cards {
-  max-width: 80%;
-  margin: 2vw auto;
+  //@include content-layout;
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   // ^ make it responsive without mediaqueries:
+  margin-bottom: 15vh;
 }
 
 .card {
@@ -104,9 +111,11 @@ hr.separator-line {
   align-items: center;
   justify-content: flex-start;
 }
+
 .card-title {
   padding-left: 1em;
 }
+
   .course-appetite {
     color: $DJSacqua;
   }
@@ -120,6 +129,14 @@ hr.separator-line {
   padding: 1em;
 }
 
+//styling elements
+
 ul {
   list-style: outside "\2043"+" ";
+}
+
+.accented {
+  //color: $DJSacqua;
+  color: $DJSsunshine;
+  //font-weight: bold;
 }
