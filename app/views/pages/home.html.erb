@@ -5,13 +5,13 @@
       How to refactor JavaScript into clean code
     </li>
     <li>
-      The 10 conventions that speed up reading and writing JavaScript for Rails
+      The parts of JavaScript that are most useful for Rails developers
     </li>
     <li>
-      How to organise JavaScript files (and why Webpacker is good fun)
+      How to organise JavaScript files (and what Webpacker has to do with it)
     </li>
     <li>
-      How your Ruby knowledge helps you to mastering ES6
+      How to leverage your Ruby knowledge to mastering ES6
     </li>
     <li>
       How to use JavaScript specific tools and apply them to Rails
@@ -37,7 +37,7 @@
   </ul>
 <% end %>
 <% content_for :amsrb do %>
-  Due to the Corona lockdown, we cancelled our plans for a workshop for the Amsterdam Ruby community.
+  The Corona lockdown counteracted the spring workshop for the Amsterdam Ruby community.
   Instead, we turned the workshop into a full featured online course. And to be honest: we think
   it's even better than the workshop :-) Collateral gains.
 
@@ -52,35 +52,51 @@
   <div class="card-text">
   <ul>
     <li>
-      You seek to be more confident about working with JavaScript code in your Rails app
+      You seek to be more confident working with JavaScript code in your Rails app
     </li>
     <li>
-      You are more comfortable in Rails than in JavaScript
+      You are (far) more comfortable in Ruby and Rails than in JavaScript
     </li>
     <li>
+      Learning a whole frontend framework is overkill and/or you're not a fan of Stimulus.
+    </li>
+    <li>
+      You want to understand what Webpacker is all about, and how (not) to use it.
     </li>
   </ul>
   </div>
 <% end %>
 
 <% content_for :notforyou do %>
-  This course is not for you if:
+  <div class="card-title">This course is not for you if:</div>
+  <div class="card-text">
   <ul>
     <li>
-      You know exactly what you're doing and why with regard to JavaScript in your Rails app
+      You know exactly <em>what</em> you're doing and <em>why</em>, with regard to JavaScript in your Rails app
     </li>
     <li>
-      You are looking for the next course: how to refactor JavaScript files into independent components (we are working on a follow up course, see ->)
+      You are looking for the part DJ showed in his talk: how to refactor JavaScript into independent components. This will be addressed in Part 3, coming soon</li>
     </li>
-    <li> </li>
+    <li>
+      You are (almost) as proficient in JavaScript as in Ruby
+    </li>
+    <li>
+      You are looking for a starter course in Rails or JavaScript.
+    </li>
   </ul>
+  </div>
 <% end %>
 
 <% content_for :courseparts do %>
-  This is part 1 of 3.
-  Part 1: JavaScript for interactive UI.
-  Part 2: Exchanging data between Rails and JavaScript
-  Part 3: Components
+  The current course is the first in a series of 3.
+  It lays the foundation for the following courses, by introducing the conventions maintainable, re-usable and testable JavaScript for Rails.
+  The next courses build upon the conventions.
+
+    <ul>
+      <li>Course 1: Clean JavaScript Code by following conventions.</li>
+      <li>Course 2: Exchanging data between Rails and JavaScript</li>
+      <li>Course 3: Components</li>
+    </ul>
 <% end %>
 
 <section class="triangle">
@@ -104,7 +120,7 @@
     And find that working with JavaScript in Rails apps can be fun after all.
   </div>
 
-  <h2 id="course-content">About the Course</h2>
+  <h2 id="course-content" >About the Course</h2>
   <div class="cards">
     <div class="card">
 
@@ -133,7 +149,7 @@
   <h2 id="amsrb">But what about the Ams.rb workshop?</h2>
   <div class="cards">
     <div class="card">
-      <div class="card-title course-around">Ams ruby workshop</div>
+<!--      <div class="card-title course-around">Ams ruby workshop</div>-->
       <div class="card-text">
         <%= yield :amsrb %>
         </div>
@@ -154,7 +170,7 @@
   </div>
 
 
-  <h2 id="foryou">This is for you...</h2>
+  <h2 id="foryou" class="course-appetite">This is for you...</h2>
   <div class="cards">
     <div class="card">
       <div>
@@ -167,18 +183,19 @@
       </div>
     </div>
   </div>
+   <div class="cards">
     <div class="card">
-      <div>
+      <div class="card-text">
         <%= yield :courseparts %>
       </div>
     </div>
   </div> <!--end cards grid-->
 </section>
 
-<section>
+<section class="text-container">
   <div id="aboutus">
     <div class="intro">
-      Maud about DJ: "I always wondered why DJ loved JavaScript so much. I know he loved Ruby, and <span class="accented">I didn't understand how one can love Ruby and JavaScript at the same time</span>.
+      Maud about DJ: "I always wondered why DJ loved JavaScript so much. I know he loved Ruby, and I didn't understand how one can love Ruby and JavaScript at the same time.
       When I showed him a piece of my JavaScript in Rails code, and we started refactoring together, I finally started to see
       what JavaScript <em>could</em> be - but almost never is. I admire his ability to play with the differences between the languages. And it's good fun to work with him."
     </div>
