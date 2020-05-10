@@ -65,15 +65,18 @@ hr.separator-line {
 // cards (grid) -> card (flex) -> card Content (See below)
 
 .text-container {
-  max-width: 80%;
+  max-width: 90%;
   margin: 15vh auto;
   //margin: auto;
 }
 
 .intro {
-  padding: 0 19vw 15vh 20vw;
+  //padding: 0 19vw 15vh 20vw;
   font-size: larger;
-  //padding-bottom: 15vh;
+  padding-bottom: 7vh;
+  max-width: 45ch;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .cards {
@@ -82,7 +85,7 @@ hr.separator-line {
   grid-gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   // ^ make it responsive without mediaqueries:
-  margin-bottom: 15vh;
+  margin-bottom: 7vh;
 }
 
 .card {
