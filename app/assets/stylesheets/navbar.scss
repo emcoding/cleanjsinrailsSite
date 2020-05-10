@@ -28,3 +28,31 @@ nav ul li {
     display: inline-block;
     padding: 20px;
 }
+
+//tooltip for the hamburger on hover
+.tooltip {
+  position: relative;
+}
+
+.tooltip .tooltiptext {
+  //positioning the tooltip
+  width: 200px;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -30px;
+
+  display: none;
+  //visibility: hidden;
+
+  font-size: small;
+  background-color: $DJSlavender;
+  color: #fff;
+  text-align: center;
+  padding: 5px 5px;
+  border-radius: 6px;
+}
+
+.tooltip:hover .tooltiptext {
+  //visibility: visible;
+  display: inline-flex;
+}
