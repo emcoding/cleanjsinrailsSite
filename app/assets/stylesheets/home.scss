@@ -1,19 +1,11 @@
-body {
-  //margin: 1vw 3vw; // side margin just enough for good scroll bar on xs screens
-  margin: 1em 0;
-  color: $DJSdark-text;
-  font-size: large;
-  background-color: $DJSwhite;
-  font-family: 'Catamaran', sans-serif;
-  font-weight: 200;
-}
 
 //// HERO things
 //copied from https://wweb.dev/resources/css-separator-generator
 .triangle {
   position: relative;
   background: $DJSbackground_grey;
-  min-height: calc(50vh + 20px);
+  min-height: max-content;
+  padding-bottom: 80px;
 }
 
 .triangle::before {
@@ -44,13 +36,14 @@ body {
 
 .hero-over-title {
   text-transform: uppercase;
-  padding-bottom: 1rem;
+  padding-bottom: 1.4rem;
 }
 
 .hero-payoff {
   padding-top: 2rem;
   letter-spacing: initial;
   color: lighten($DJSlavender, 10%);
+  padding-bottom: 2rem;
 }
 
 hr.separator-line {
@@ -65,18 +58,23 @@ hr.separator-line {
 // cards (grid) -> card (flex) -> card Content (See below)
 
 .text-container {
-  max-width: 90%;
-  margin: 15vh auto;
-  //margin: auto;
+  margin: 35px 3vw 0 3vw;
 }
 
 .intro {
   //padding: 0 19vw 15vh 20vw;
   font-size: larger;
-  padding-bottom: 7vh;
+  //padding-top: 4vh;
+  padding-bottom: 30px;
   max-width: 45ch;
+  margin-top: 30px;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto; // this auto margins is needed to center the text block...
+  //text-align: center; //  ... and this is needed to center the button (See below)
+}
+
+.intro-with-button-centered {
+  text-align: center
 }
 
 .cards {
@@ -85,7 +83,7 @@ hr.separator-line {
   grid-gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   // ^ make it responsive without mediaqueries:
-  margin-bottom: 7vh;
+  margin-bottom: 3vh;
 }
 
 .card {
@@ -131,7 +129,26 @@ hr.separator-line {
   padding: 1em;
 }
 
-//styling elements
+//button
+
+.btn-enroll {
+  border: none;
+  border-radius: 10%;
+  background-color: $DJSsunshine;
+  color: $DJSwhite;
+
+  display: inline-block;
+  font-size: 2rem;
+  margin: 60px auto 0 auto;
+  padding: 14px 30px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken($DJSsunshine, 10%);;
+  }
+}
+
+//styling
 
 ul {
   list-style: outside "\2043"+" ";
@@ -140,26 +157,5 @@ ul {
 .accented {
   color: $DJSsunshine;
 }
-
-  $w: 33vw;
-  $h: 8vh;
-
-.btn-enroll {
-  width: $w;
-  height: $h;
-  background-color: $DJSsunshine;
-  border-radius: .5*$h;
-  //display:inline-block;
-  cursor: pointer;
-  color: whitesmoke;
-  font-size: 1.5em;
-  text-decoration: none;
-
-  &:hover {
-    //  do something
-  }
-}
-
-
 
 

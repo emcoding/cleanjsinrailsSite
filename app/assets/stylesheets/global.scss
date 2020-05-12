@@ -15,6 +15,16 @@ $DJSdark-text: darkslategrey;
   //background-color: $DJSwhite;
 }
 
+body {
+  //margin: 1vw 3vw; // side margin just enough for good scroll bar on xs screens
+  margin: 0;
+  color: $DJSdark-text;
+  font-size: large;
+  background-color: $DJSwhite;
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 200;
+  max-width: max-content;
+}
 
 a {
   text-decoration: none;
