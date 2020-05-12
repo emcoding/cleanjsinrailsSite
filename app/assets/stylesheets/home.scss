@@ -82,8 +82,15 @@ hr.separator-line {
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  // ^ make it responsive without mediaqueries:
+  // ^ no media queries needed for smaller screens
   margin-bottom: 3vh;
+}
+
+@media screen and (min-width: 1400px) {
+  .cards {
+    //background-color: deeppink;
+    grid-template-columns: repeat(auto-fit, minmax(1fr, 300px));
+  }
 }
 
 .card {
