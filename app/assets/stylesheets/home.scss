@@ -61,6 +61,14 @@ hr.separator-line {
   margin: 35px 3vw 0 3vw;
 }
 
+@media screen and (min-width: 1800px) {
+  .text-container {
+    //background-color: deeppink;
+    max-width: 1800px;
+    margin: 35px auto;
+  }
+}
+
 .intro {
   //padding: 0 19vw 15vh 20vw;
   font-size: larger;
@@ -70,7 +78,7 @@ hr.separator-line {
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto; // this auto margins is needed to center the text block...
-  //text-align: center; //  ... and this is needed to center the button (See below)
+  //text-align: center; //  ... and this is needed to center the button (moved, see below)
 }
 
 .intro-with-button-centered {
@@ -81,16 +89,10 @@ hr.separator-line {
   //@include content-layout;
   display: grid;
   grid-gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(470px, 1fr));
   // ^ no media queries needed for smaller screens
+  // 470 is trial and error: full column card on small screens,
   margin-bottom: 3vh;
-}
-
-@media screen and (min-width: 1400px) {
-  .cards {
-    //background-color: deeppink;
-    grid-template-columns: repeat(auto-fit, minmax(1fr, 300px));
-  }
 }
 
 .card {
